@@ -53,8 +53,10 @@
                 font-weight: bold;
                 color: #fff;
                 line-height: 1;
+                letter-spacing: -1px;
                 @include mq(md, max) {
                     font-size: 3.2rem;
+                    letter-spacing: -1px;
                 }
             }
         }
@@ -93,7 +95,7 @@
                                 height: 327px;
                                 @include mq(md, max) {
                                     width: 165px;
-                                    height: 215px;
+                                    height: 216px;
                                 }
 
                                 > figure {
@@ -122,9 +124,11 @@
                                             font-weight: bold;
                                             line-height: 2;
                                             color: #00ada0;
+                                            letter-spacing: -1px;
                                             @include mq(md, max) {
                                                 font-size: 2.4rem;
                                                 line-height: 22px;
+                                                letter-spacing: -0.5px;
                                             }
                                         }
                                     }
@@ -132,8 +136,9 @@
 
                                 .c-hero__content {
                                     padding: 10px;
+                                    padding-top: 9px;
                                     @include mq(md, max) {
-                                        padding: 5px;
+                                        padding: 4px;
                                     }
 
                                     > p {
@@ -141,9 +146,11 @@
                                         font-weight: bold;
                                         line-height: 25px;
                                         color: #000000;
+                                        letter-spacing: -0.5px;
                                         @include mq(md, max) {
                                             font-size: 2.4rem;
                                             line-height: 1.5;
+                                            letter-spacing: 0;
                                         }
                                     }
 
@@ -151,11 +158,13 @@
                                         display: block;
                                         font-size: 1.4rem;
                                         font-weight: 400;
-                                        line-height: 33px;
+                                        line-height: 1.25;
+                                        margin-top: 13px;
                                         color: #000000;
                                         @include mq(md, max) {
                                             font-size: 2.2rem;
                                             line-height: 1.82;
+                                            margin-top: 0;
                                         }
                                     }
                                 }
@@ -171,7 +180,7 @@
                     height: 70px;
                     position: absolute;
                     top: 50%;
-                    left: 60px;
+                    left: 50px;
                     transform: translateY(-50%);
                     @include mq(xl, max) {
                         left: 20px;
@@ -192,7 +201,7 @@
                     height: 70px;
                     position: absolute;
                     top: 50%;
-                    right: 60px;
+                    right: 50px;
                     transform: translateY(-50%);
                     @include mq(xl, max) {
                         right: 20px;
@@ -215,7 +224,7 @@
                     left: 50%;
                     transform: translateX(-50%);
                     @include mq(md, max) {
-                        bottom: -24px;
+                        bottom: -31px;
                     }
 
                     > li > button {

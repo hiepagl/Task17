@@ -4,7 +4,7 @@ $('.c-slider__list').slick({
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    autoplay: true,
+    autoplay: false,
     arrows: false,
 });
 
@@ -17,7 +17,7 @@ $('.c-hero__list').slick({
     centerMode: true,
     variableWidth: true,
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     prevArrow: "<button type='button' class='c-hero__btnLeft'><figure><img src='./assets/images/hero/arrowLeft.png' alt='arrowLeft'></figure></button>",
     nextArrow: "<button type='button' class='c-hero__btnRight'><figure><img src='./assets/images/hero/arrowRight.png' alt='arrowRight'></figure></button>",
     responsive: [
