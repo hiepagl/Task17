@@ -1,0 +1,160 @@
+<% const basePath='.' ; const title='contact' ; const description='' ; const keyword='' ; %>
+    <!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <%- include('partials/_head', { basePath, title, description, keyword }); %>
+    </head>
+
+    <body>
+        <%- include('layout/_header', { basePath }); %>
+            <main class="c-main">
+                <section class="c-contactMv">
+                    <div class="c-contactMv__container">
+                        <div class="c-contactMv__content">
+                            <p>CONTACT</p>
+                            <h2>お問い合わせ</h2>
+                        </div>
+                    </div>
+                </section>
+                <!-- end aboutMv -->
+
+                <section class="c-contactForm">
+                    <div class="c-contactForm__container">
+                        <div class="c-contactForm__breadcump">
+                            <ul>
+                                <li><a href="./index.html">ホーム</a></li>
+                                <li><a href="./contact.html"><span>></span>お問い合わせ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="c-contactForm__wrapper">
+                            <div class="c-contactForm__heading">
+                                <h2>一般･学生の皆様へ</h2>
+                                <div class="c-contactForm__note">
+                                    <p>この度は愛媛シゴト図鑑をご覧いただきありがとうございます。</p>
+                                    <p>愛媛シゴト図鑑を見て疑問に思ったこと、ご質問等ございましたら下記の問い合わせフォームにて意見をお寄せください。少し聞きづらいなと思うようなことも遠慮なくご質問ください。愛媛シゴト図鑑は頑張る就活生を応援しています！
+                                    </p>
+                                    <p>個人情報の取扱に関しましては、<span class="c-contactForm__note--blue">プライバシーポリシー</span>をご確認ください。
+                                    </p>
+                                    <span class="c-contactForm__note--red">※は入力必須です。</span>
+                                </div>
+                            </div>
+                            <form class="c-contactForm__body" action="">
+                                <span class="c-contactForm__error">入力内容を確認してください。</span>
+                                <ul>
+                                    <li>
+                                        <p>氏名 <span>※</span></p>
+                                        <div class="c-contactFrom__input">
+                                            <input type="text">
+                                            <span class="c-contactForm__error">『氏名』を入力してください。</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>会社・学校名</p>
+                                        <div class="c-contactFrom__input">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>住所</p>
+                                        <div class="c-contactFrom__input c-contactFrom__input--full">
+                                            <input type="text">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>電話番号 <span>※</span></p>
+                                        <div class="c-contactFrom__input">
+                                            <input type="text">
+                                            <span class="c-contactForm__error">『電話番号』を入力してください。</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>メールアドレス <span>※</span></p>
+                                        <div class="c-contactFrom__input">
+                                            <input type="text">
+                                            <span class="c-contactForm__error">『メールアドレス』を入力してください。</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>本サイトを知ったきっかけ</p>
+                                        <div class="c-contactFrom__input">
+                                            <ul class="c-contactFrom__checkbox">
+                                                <li>
+                                                    <input id="box1" type="checkbox" value="検索" hidden>
+                                                    <label for="box1">
+                                                        <div class="c-contactFrom__box"><i class="fas fa-check"></i>
+                                                        </div>
+                                                        <span>検索</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input id="box2" type="checkbox" value="冊子" hidden>
+                                                    <label for="box2">
+                                                        <div class="c-contactFrom__box"><i class="fas fa-check"></i>
+                                                        </div>
+                                                        <span>冊子</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input id="box3" type="checkbox" value="ネット広告" hidden>
+                                                    <label for="box3">
+                                                        <div class="c-contactFrom__box"><i class="fas fa-check"></i>
+                                                        </div>
+                                                        <span>ネット広告</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input id="box4" type="checkbox" value="口コミ" hidden>
+                                                    <label for="box4">
+                                                        <div class="c-contactFrom__box"><i class="fas fa-check"></i>
+                                                        </div>
+                                                        <span>口コミ</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input id="box5" type="checkbox" value="チラシ" hidden>
+                                                    <label for="box5">
+                                                        <div class="c-contactFrom__box"><i class="fas fa-check"></i>
+                                                        </div>
+                                                        <span>チラシ</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <ul class="c-contactFrom__checkbox">
+                                                <li>
+                                                    <input id="box6" type="checkbox" value="検索" hidden>
+                                                    <label for="box6">
+                                                        <div class="c-contactFrom__box"><i class="fas fa-check"></i>
+                                                        </div>
+                                                        <span>検索</span>
+                                                    </label>
+                                                </li>
+                                                <li class="c-contactFrom__input--full">
+                                                    <input type="text">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>お問い合わせ内容 <span>※</span></p>
+                                        <div class="c-contactFrom__input">
+                                            <textarea name="content" id="content"></textarea>
+                                            <span class="c-contactForm__error">『お問い合わせ内容』を入力してください。</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="c-contactForm__submit" type="submit">
+                                    <p>この内容で送信する</p>
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- en contactForm -->
+            </main>
+            <%- include('layout/_footer', { basePath }); %>
+    </body>
+
+    </html>

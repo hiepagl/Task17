@@ -21,17 +21,17 @@
     src: local("Yu Gothic Medium");
 }
 
-$font-family-jp-sans-serif: "Noto Sans JP", "Noto Serif JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium",
-    YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
+$font-family-jp-sans-serif: "Noto Sans JP", "Noto Serif JP", "Franklin Gothic", "Kozuka Gothic Pr6N",
+    "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+    "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
 // 游ゴシック優先(Webフォント未使用)
 // $font-family-jp-sans-serif: '游ゴシック Medium','游ゴシック体','Yu Gothic Medium',YuGothic,'ヒラギノ角ゴ ProN','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 
 // ・明朝体
 // --------------------
-$font-family-jp-serif: "Noto Sans JP", "Noto Serif JP", "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E,
-    メイリオ, Meiryo, serif;
+$font-family-jp-serif: "Noto Sans JP", "Noto Serif JP", "Franklin Gothic", "Kozuka Gothic Pr6N", "Yu Mincho", YuMincho,
+    "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
 
 // ・独自に追加したWebフォントなど
 // --------------------

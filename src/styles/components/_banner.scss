@@ -39,8 +39,10 @@
         padding-top: 200px;
       }
       @include mq(md, max) {
-        padding-top: 50px;
-        padding-bottom: 35px;
+        min-height: 400px;
+        justify-content: flex-start;
+        padding-top: 87px;
+        padding-bottom: 30px;
       }
 
       > figure {
@@ -80,10 +82,10 @@
         margin-left: 10px;
         letter-spacing: -0.5px;
         @include mq(md, max) {
-          font-size: 2.6rem;
+          margin-left: 5px;
           font-weight: 500;
-          margin-left: 0;
-          letter-spacing: 0;
+          font-size: 2.6rem;
+          letter-spacing: -0.8px;
         }
       }
 
@@ -97,7 +99,7 @@
           max-width: 900px;
         }
         @include mq(md, max) {
-          margin-top: 25px;
+          margin-top: 21px;
         }
         > figure {
           max-width: 440px;
@@ -127,6 +129,7 @@
           @include mq(md, max) {
             font-size: 2.8rem;
             line-height: 38px;
+            letter-spacing: -0.5px;
           }
         }
 
@@ -140,7 +143,7 @@
           color: #00ada0;
           @include mq(md, max) {
             font-size: 3rem;
-            right: 34px;
+            right: 31px;
           }
         }
       }

@@ -59,12 +59,20 @@
                     padding-right: 0;
                 }
                 @include mq(md, max) {
-                    padding: 35px 10px;
+                    padding: 0 10px;
+                    padding-top: 34px;
+                    padding-bottom: 30px;
                 }
 
-                > figure {
-                    display: flex;
-                    margin-bottom: 15px;
+                > a {
+                    display: block;
+                    > figure {
+                        display: flex;
+                        margin-bottom: 15px;
+                        @include mq(md, max) {
+                            margin-bottom: 25px;
+                        }
+                    }
                 }
 
                 > p {
@@ -76,7 +84,7 @@
                     @include mq(md, max) {
                         text-align: center;
                         font-size: 2.6rem;
-                        margin-left: 0;
+                        margin-left: -4px;
                     }
                 }
 
@@ -121,7 +129,7 @@
                 }
                 @include mq(md, max) {
                     padding: 0 10px;
-                    padding-top: 35px;
+                    padding-top: 31px;
                     justify-content: flex-start;
                 }
 
@@ -129,6 +137,7 @@
                     min-width: 420px;
                     @include mq(md, max) {
                         min-width: auto;
+                        margin-bottom: 20px;
                     }
 
                     > p {
@@ -157,8 +166,8 @@
                         }
                         @include mq(md, max) {
                             font-size: 3.6rem;
-                            margin-top: 25px;
-                            margin-bottom: 25px;
+                            margin-top: 19px;
+                            margin-bottom: 23px;
                         }
 
                         > span {
@@ -210,6 +219,32 @@
                         flex-grow: 0;
                         min-width: auto;
                         width: 100%;
+                        padding: 21px 0;
+                        position: relative;
+                    }
+
+                    &::before {
+                        @include mq(md, max) {
+                            content: "";
+                            width: 200vw;
+                            height: 1px;
+                            background-color: rgba(242, 242, 242, 0.6);
+                            position: absolute;
+                            top: 0;
+                            left: -55%;
+                        }
+                    }
+
+                    &::after {
+                        @include mq(md, max) {
+                            content: "";
+                            width: 200vw;
+                            height: 1px;
+                            background-color: rgba(242, 242, 242, 0.6);
+                            position: absolute;
+                            bottom: 0;
+                            left: -55%;
+                        }
                     }
 
                     > a {
@@ -228,6 +263,13 @@
                             line-height: 31px;
                             font-size: 2.6rem;
                             border: 1px solid #fff;
+                            margin-top: 15px;
+                        }
+                    }
+
+                    > a:first-child {
+                        @include mq(md, max) {
+                            margin-top: 0;
                         }
                     }
                 }

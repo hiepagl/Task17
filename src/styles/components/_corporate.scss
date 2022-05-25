@@ -162,10 +162,30 @@
                 background-size: cover;
                 @include mq(md, max) {
                   width: 166px;
-                  height: 126px;
+                  height: 124px;
                   border: 2px solid #fff;
                   background-image: url("../images/corporate/corp#{$i}_sp.jpg");
                 }
+              }
+            }
+
+            > .c-corp__image5 {
+              @include mq(xl, max) {
+                background-position: right top;
+                background-size: 150%;
+              }
+              @include mq(lg, max) {
+                background-position: right;
+                background-size: cover;
+              }
+            }
+
+            > .c-corp__image6 {
+              @include mq(xl, max) {
+                background-size: 130%;
+              }
+              @include mq(lg, max) {
+                background-size: cover;
               }
             }
 
@@ -181,6 +201,12 @@
               padding-bottom: 30px;
               position: relative;
               z-index: 1;
+              @include mq(xl, max) {
+                width: 260px;
+              }
+              @include mq(lg, max) {
+                width: 286px;
+              }
               @include mq(md, max) {
                 width: 165px;
                 min-height: 156px;
@@ -279,7 +305,7 @@
             > .c-corp__content--pt {
               padding-top: 15px;
               @include mq(md, max) {
-                padding-top: 11px;
+                padding-top: 13px;
               }
             }
           }
@@ -298,7 +324,7 @@
         @include mq(md, max) {
           max-width: 270px;
           height: 38px;
-          margin-top: 35px;
+          margin-top: 32px;
           box-shadow: 2px 2px 0px 0px #000;
         }
 
