@@ -3,6 +3,7 @@ base - 基本設定
 ========================================================= */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -62,6 +63,10 @@ textarea {
     box-shadow: none;
     border: none;
     border-radius: 0;
+}
+
+.space {
+    display: none;
 }
 
 @include mq(lg, max) {

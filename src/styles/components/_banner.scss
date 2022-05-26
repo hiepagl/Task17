@@ -26,6 +26,7 @@
         display: none;
       }
     }
+
     .c-banner__content {
       flex-grow: 1;
       min-height: 418px;
@@ -101,6 +102,7 @@
         @include mq(md, max) {
           margin-top: 21px;
         }
+
         > figure {
           max-width: 440px;
         }
@@ -118,6 +120,19 @@
           max-width: 270px;
           height: 38px;
           margin-top: 25px;
+        }
+
+        &:hover {
+          border: 2px solid #00a99d;
+          opacity: 1;
+
+          > p {
+            line-height: 56px;
+          }
+
+          > i {
+            right: 18px;
+          }
         }
 
         > p {
