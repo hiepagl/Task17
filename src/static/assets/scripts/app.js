@@ -30,6 +30,8 @@ $('.c-hero__list').slick({
   ]
 });
 
+new WOW().init();
+
 // VALIDATE FORM
 var form = document.contactForm;
 var isValid = false;
@@ -48,7 +50,7 @@ function handleInput(inputName) {
 
 function handleSubmit() {
   if (!isValid) {
-    alert("入力内容を確認してください。")
+    alert("入力内容を確認してください。!")
     document.querySelector(".c-contactForm__formError").classList.add("is-actived");
     document.querySelector("#contactForm").scrollIntoView();
     return false;

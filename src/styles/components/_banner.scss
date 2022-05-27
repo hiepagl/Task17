@@ -22,7 +22,7 @@
       display: flex;
       min-width: 440px;
       height: 398px;
-      @include mq("xxxl", max) {
+      @include mq('xxxl', max) {
         display: none;
       }
     }
@@ -36,7 +36,7 @@
       justify-content: flex-end;
       align-items: center;
       padding-bottom: 53px;
-      @include mq("xxxl", max) {
+      @include mq('xxxl', max) {
         padding-top: 200px;
       }
       @include mq(md, max) {
@@ -92,7 +92,7 @@
 
       .c-banner__image {
         display: none;
-        @include mq("xxxl", max) {
+        @include mq('xxxl', max) {
           display: flex;
           justify-content: space-between;
           margin-top: 40px;
@@ -128,10 +128,16 @@
 
           > p {
             line-height: 56px;
+            @include mq(md, max) {
+              line-height: 34px;
+            }
           }
 
           > i {
             right: 18px;
+            @include mq(md, max) {
+              right: 29px;
+            }
           }
         }
 

@@ -2,93 +2,95 @@
 base - 基本設定
 ========================================================= */
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-    font-family: $font-family-jp-sans-serif;
-    color: $base-font-color;
-    font-weight: 400;
-    line-height: 1.25;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: $font-family-jp-sans-serif;
+  color: $base-font-color;
+  font-weight: 400;
+  line-height: 1.25;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ul,
 li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 a {
-    // @include link-color;
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
+  // @include link-color;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
 
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 button {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
 }
 
 input,
 textarea {
-    background-color: transparent;
-    margin: 0;
-    padding: 5px;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 5px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
 }
 
 .space {
-    display: none;
+  display: none;
 }
 
 @include mq(lg, max) {
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 }
 
 @include mq(lg, min) {
-    .sp-only {
-        display: none;
-    }
+  .sp-only {
+    display: none;
+  }
 }
 
 @include mq(lg, max) {
-    .pc-only {
-        display: none;
-    }
+  .pc-only {
+    display: none;
+  }
 }
 
 @include mq(md, max) {
-    html {
-        font-size: 31.25%;
-    }
+  html {
+    font-size: 31.25%;
+  }
 }
