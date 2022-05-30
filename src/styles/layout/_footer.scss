@@ -47,13 +47,14 @@
             }
 
             .c-footer__company {
-                max-width: 420px;
+                width: 421px;
                 display: flex;
                 flex-direction: column;
                 border-right: 1px solid #80d6d0;
                 padding: 20px 0;
                 padding-right: 10px;
                 @include mq(lg, max) {
+                    width: auto;
                     align-items: center;
                     border-right: none;
                     padding-right: 0;
@@ -120,7 +121,7 @@
                 justify-content: space-between;
                 flex-grow: 1;
                 padding: 20px 0;
-                padding-left: 23px;
+                padding-left: 20px;
                 @include mq(lg, max) {
                     flex-direction: column;
                     align-items: center;

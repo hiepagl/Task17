@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).on("load", function () {
   $('.c-slider__list').slick({
     dots: false,
     infinite: true,
@@ -35,17 +35,45 @@ $(document).ready(function () {
 // VALIDATE FORM
 var form = document.contactForm;
 var isValid = false;
+var isUsername = false;
+var isPhonenumber = false;
+var isEmail = false;
+var isComment = false;
+
 
 function handleInput(inputName) {
   var errorElement = document.querySelector('#' + inputName + ' + span');
 
-  if (form[inputName].value === "") {
-    errorElement.innerText = "『" + inputName + "』を入力してください。";
-    isValid = false;
-  } else {
+  if (form[inputName].value === "" && inputName === "username") {
+    errorElement.innerText = "『氏名』を入力してください。";
+    isUsername = false;
+  } else if (form[inputName].value !== "" && inputName === "username") {
     errorElement.innerText = "";
-    isValid = true;
+    isUsername = true;
   };
+  if (form[inputName].value === "" && inputName === "phoneNumber") {
+    errorElement.innerText = "『電話番号』を入力してください。";
+    isPhonenumber = false;
+  } else if (form[inputName].value !== "" && inputName === "phoneNumber") {
+    errorElement.innerText = "";
+    isPhonenumber = true;
+  };
+  if (form[inputName].value === "" && inputName === "email") {
+    errorElement.innerText = "『メールアドレス』を入力してください。";
+    isEmail = false;
+  } else if (form[inputName].value !== "" && inputName === "email") {
+    errorElement.innerText = "";
+    isEmail = true;
+  };
+  if (form[inputName].value === "" && inputName === "comment") {
+    errorElement.innerText = "『お問い合わせ内容』を入力してください。";
+    isComment = false;
+  } else if (form[inputName].value !== "" && inputName === "comment") {
+    errorElement.innerText = "";
+    isComment = true;
+  };
+
+  isValid = isUsername && isPhonenumber && isEmail && isComment;
 }
 
 function handleSubmit() {
@@ -61,4 +89,3 @@ function handleSubmit() {
   }
 }
 
-// https://docs.google.com/spreadsheets/d/1tJ4UsF25VF_ttTPEIwlGjl5L89Qtcs3tB-y6gcfMUlg/edit#gid=1751104228

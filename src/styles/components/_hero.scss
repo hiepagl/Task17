@@ -22,7 +22,7 @@
             height: 95px;
             border: 2px solid #acdeda;
             border-radius: 3px;
-            padding: 18px 0;
+            padding: 17px 0;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -42,8 +42,9 @@
                 font-size: 2rem;
                 font-weight: bold;
                 color: rgba(255, 255, 255, 0.502);
-                line-height: 1;
+                line-height: 0.7;
                 @include mq(md, max) {
+                    line-height: 1;
                     font-size: 2.8rem;
                 }
             }
